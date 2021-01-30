@@ -1,0 +1,39 @@
+
+//Obtener todos los empleados guardados en bd
+
+###
+GET http://localhost:4000/api/employees
+
+
+//Agregar empleado nuevo
+
+###
+POST  http://localhost:4000/api/employees
+Content-Type: application/json
+
+{
+    "name": "Diego",
+    "position": "Developer",
+    "office": "Santiago",
+    "salary": "9199"
+
+}
+
+
+//Mostar empleado seleccionado por ID
+###
+GET http://localhost:4000/api/employees/60146c08c846b833c8374efa
+
+//Eliminar empleado por ID
+###
+DELETE  http://localhost:4000/api/employees/60146afcc846b833c8374ef9
+
+//Actualizar por ID
+
+###
+PUT http://localhost:4000/api/employees/6012f0f7cf006f0b68942cb6
+Content-Type: application/json
+
+{
+    "salary": "55559999"
+}
